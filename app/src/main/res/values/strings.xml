@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">food_delivery_app</string>
+    <string name="title_head">Food Delivery App</string>
+    <string name="title_body">
+        It\'s an app where you choose foods from available registered restaurants and cafes adding them to your basket. Upon successful payment for the basket,
+        your food is packed for delivery by our delivery services.
+        The app is integrated with Safaricom daraja lipa-na-mpesa online (paybill) for paying the basket.
+        Africa\'s Talking SMS API for communicating or updates to the customers individually or bulky.
+        Google Maps for easier choose of restaurants registered on the map and tracking between the delivery guy\'s location and your location.
+    </string>
+    <string name="login">Login</string>
+    <string name="noaccount">Don\'t have an account?</string>
+    <string name="google">Sign in with Google</string>
+    <string name="facebook">Sign in with Facebook</string>
+</resources>
