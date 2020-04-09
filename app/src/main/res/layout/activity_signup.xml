@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+    <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+            android:fontFamily="@font/msb"
+            android:text="@string/back"
+            android:textColor="@color/colorDark"
+            android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user"
+        android:fontFamily="@font/mm"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_an_account"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/mb"
+        android:textSize="23sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUsername"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/colorAccent"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="?attr/colorAccent"
+        app:startIconDrawable="@drawable/ic_account_box_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mm"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/email"
+        android:textColorHint="@color/colorAccent"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="?attr/colorAccent"
+        app:startIconDrawable="@drawable/ic_email_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mm"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/phone"
+        app:helperText="Int format: +254..."
+        android:textColorHint="@color/colorAccent"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="?attr/colorAccent"
+        app:startIconDrawable="@drawable/ic_phone_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mm"
+            android:inputType="phone"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorAccent"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorAccent"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="?attr/colorAccent"
+        app:startIconDrawable="@drawable/ic_lock_black_24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mm"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/msb"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="?android:attr/listDivider"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="14sp"
+    android:fontFamily="@font/mm"
+    android:text="@string/txtAgreement"
+    android:textAlignment="center"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/msb"
+        android:singleLine="true"
+        android:text="@string/policy"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

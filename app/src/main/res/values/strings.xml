@@ -13,12 +13,21 @@
     <string name="google">Sign in with Google</string>
     <string name="facebook">Sign in with Facebook</string>
     <string name="hello"></string>
+    <string name="profilePhoto">Select Profile Photo</string>
+    <string name="txtAgreement">By creating your Mashakura Dish Account, you also have agreed to my terms and conditions.</string>
+    <string name="policy">Privacy Policy Licence Agreements</string>
+    <string name="back">Back</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="email">Email</string>
+    <string name="username">Name</string>
+    <string name="phone">Phone</string>
     <string name="sign_up">Sign Up</string>
     <string name="send">Send</string>
     <string name="txtFP">Please enter your Email address</string>
     <string name="todo">Image Of Forget Password</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="new_user">New User?</string>
+    <string name="user_profile_photo">User profile photo</string>
 
 </resources>
