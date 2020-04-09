@@ -12,4 +12,9 @@
     <string name="noaccount">Don\'t have an account?</string>
     <string name="google">Sign in with Google</string>
     <string name="facebook">Sign in with Facebook</string>
+    <string name="hello"></string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

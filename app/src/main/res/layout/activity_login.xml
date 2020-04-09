@@ -9,12 +9,13 @@
 
 
     <TextView
+        android:id="@+id/txtHello"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
-        android:text="Hello, It\'s Thursday!"
+        android:text="@string/hello"
         android:textAlignment="center"
         android:fontFamily="@font/mb"
         android:textColor="@color/colorDark"
@@ -22,8 +23,6 @@
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    //username
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
@@ -33,7 +32,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="5dp"
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHint="@color/colorAccent"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/colorAccent"
@@ -54,9 +53,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    //password
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -65,7 +61,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="5dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:textColorHint="@color/colorAccent"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/colorAccent"
@@ -94,7 +90,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:fontFamily="@font/mm"
         android:textAlignment="textEnd"
         android:textColor="@color/colorPrimaryDark"
@@ -148,7 +144,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/msb"
             android:textSize="15sp"
-            android:text=" Sign Up"
+            android:text="@string/sign_up"
             android:textColor="@color/colorPrimaryDark" />
 
     </LinearLayout>
@@ -161,10 +157,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/colorAccent"
-        android:text="@string/google"
-        android:textSize="11sp"
-        android:textColor="@color/colorPrimary"
         android:fontFamily="@font/mm"
+        android:text="@string/google"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
         app:icon="@drawable/ic_google"
         app:layout_constraintBottom_toTopOf="@+id/signInWithFb"
         app:layout_constraintEnd_toEndOf="parent"
@@ -179,10 +175,10 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/colorAccent"
-        android:text="@string/facebook"
-        android:textSize="11sp"
-        android:textColor="@color/colorPrimary"
         android:fontFamily="@font/mm"
+        android:text="@string/facebook"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
         app:icon="@drawable/ic_facebook_f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
