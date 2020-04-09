@@ -162,6 +162,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="12sp"
         app:icon="@drawable/ic_google"
+        app:iconGravity="textStart"
         app:layout_constraintBottom_toTopOf="@+id/signInWithFb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -179,6 +180,7 @@
         android:text="@string/facebook"
         android:textColor="@color/colorPrimary"
         android:textSize="12sp"
+        app:iconGravity="textStart"
         app:icon="@drawable/ic_facebook_f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
