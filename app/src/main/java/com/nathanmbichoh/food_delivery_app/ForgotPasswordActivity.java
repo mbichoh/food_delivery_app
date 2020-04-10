@@ -21,7 +21,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_forgot_password);
 
         txtBtnBack = (TextView) findViewById(R.id.txtBack);
-        txtEmailAddress = (EditText) findViewById(R.id.emailTxt);
+        txtEmailAddress = (EditText) findViewById(R.id.verityTxt);
         btnSendEmail    = (Button) findViewById(R.id.btnSend);
 
         txtBtnBack.setOnClickListener(new View.OnClickListener() {

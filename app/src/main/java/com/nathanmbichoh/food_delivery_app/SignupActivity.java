@@ -27,7 +27,7 @@ public class SignupActivity extends AppCompatActivity {
 
         txtPassword = (TextInputEditText) findViewById(R.id.passwordTxt);
         txtPhone    = (TextInputEditText) findViewById(R.id.phoneTxt);
-        txtEmail    = (TextInputEditText) findViewById(R.id.emailTxt);
+        txtEmail    = (TextInputEditText) findViewById(R.id.verityTxt);
         txtName     = (TextInputEditText) findViewById(R.id.usernameTxt);
 
         //alternative go back to login window

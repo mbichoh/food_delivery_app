@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimary"
+    tools:context=".ForgotPasswordActivity">
+
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+        android:fontFamily="@font/msb"
+        android:text="@string/back"
+        android:textColor="@color/colorDark"
+        android:textSize="17sp" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:src="@drawable/ic_undraw_security_o890"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorDark"
+        android:fontFamily="@font/msb"
+        android:textSize="21sp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verif"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mm"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/code_expires_in"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/mm"
+        android:textSize="15sp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_to_exp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/msb"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <EditText
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msb"
+            android:inputType="numberSigned|number"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+        <EditText
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msb"
+            android:inputType="numberSigned|number"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+        <EditText
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msb"
+            android:inputType="numberSigned|number"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+        <EditText
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msb"
+            android:inputType="numberSigned|number"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+        <EditText
+            android:maxLength="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/msb"
+            android:inputType="numberSigned|number"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/din_t_receive_any_sms_verification_code"
+        android:fontFamily="@font/mm"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_a_new_code"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/msb"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:fontFamily="@font/msb"
+        android:text="@string/verificationBtn"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp" />
+
+</LinearLayout>

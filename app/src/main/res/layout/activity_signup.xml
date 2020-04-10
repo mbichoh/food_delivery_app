@@ -98,7 +98,7 @@
         app:startIconDrawable="@drawable/ic_email_black_24dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailTxt"
+            android:id="@+id/verityTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mm"
