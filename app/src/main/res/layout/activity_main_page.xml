@@ -10,6 +10,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         >
 
@@ -79,10 +80,41 @@
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   />
+
+            <!--categories-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:fontFamily="@font/msb"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorDark"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTotalCategories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" . 10 Categories"
+                    android:fontFamily="@font/msb"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewListCat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
         </LinearLayout>
-
-
-
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.appbar.AppBarLayout
