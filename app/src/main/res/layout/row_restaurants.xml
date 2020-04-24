@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/materialCardViewRestaurants"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="@color/colorPrimary"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    app:rippleColor="@color/colorAccent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/imgRes"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@mipmap/dish"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/txtAgreement"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/textRestaurantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/restaurant_name"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/mm"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    >
+
+                    <RatingBar
+                        android:id="@+id/rateRestaurant"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:progressTint="@color/rating"
+                        android:progressBackgroundTint="@color/colorPrimary"
+                        android:numStars="5"
+                        android:rating="4.0"
+                        android:stepSize="1.0"
+                        tools:ignore="TooDeepLayout" />
+
+                    <TextView
+                        android:id="@+id/txtNumFavourite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_favorite_border_black_24dp"
+                        android:fontFamily="@font/mr"
+                        android:text="@string/res_likes"
+                        android:textColor="@color/colorDark"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="50dp"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

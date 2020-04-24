@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">food_delivery_app</string>
+    <string name="app_name">Food App</string>
     <string name="title_head">Food Delivery App</string>
     <string name="title_body">
         It\'s an app where you choose foods from available registered restaurants and cafes adding them to your basket. Upon successful payment for the basket,
@@ -33,8 +33,15 @@
     <string name="new_user">New User?</string>
     <string name="user_profile_photo">User profile photo</string>
     <string name="resend_a_new_code">Resend a new code</string>
-    <string name="din_t_receive_any_sms_verification_code">Din\'t receive any SMS Verification code?</string>
-    <string name="time_to_exp">1:59 Sec</string>
-    <string name="code_expires_in">Code expires in</string>
+    <string name="din_t_receive_any_sms_verification_code">Didn\'t receive any SMS Verification code?</string>
+    <string name="time_to_exp"> 1:59 Sec</string>
+    <string name="code_expires_in">Code expires in  </string>
+    <string name="hello_">Hello, Nathan.</string>
+    <string name="what_would_you_like_n_to_eat_today">What would you like \nto eat today?</string>
+    <string name="favourite">Favourite</string>
+    <string name="num_restaurants_total">. 16 Restaurants</string>
+    <string name="restaurant_name">The Tav, Westlands</string>
+    <string name="res_likes">256</string>
+    <string name="img_welcome">Welcome Image</string>
 
 </resources>
