@@ -1,14 +1,17 @@
 package com.nathanmbichoh.food_delivery_app;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.nathanmbichoh.food_delivery_app.adapters.MyRestaurantCategoriesAdapter;
@@ -77,5 +80,15 @@ public class MainPageActivity extends AppCompatActivity {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.main_page, menu);
         return  true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_profile:
+                startActivity(new Intent(this, ProfileActivity.class));
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
