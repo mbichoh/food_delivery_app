@@ -43,5 +43,20 @@
     <string name="restaurant_name">The Tav, Westlands</string>
     <string name="res_likes">256</string>
     <string name="img_welcome">Welcome Image</string>
+    <string name="cafe_name">Pizza Inn</string>
+    <string name="cafe_location">Thika, Kiambu</string>
+    <string name="cafe_rates">4,5</string>
+    <string name="cafe_likes">(202)</string>
+    <string name="cafe_delivery">Delivery Ksh200</string>
+    <string name="cafe_delivery_time">1.5h</string>
+    <string name="category_name">Cakes</string>
+    <string name="category_places_count">590 Places</string>
+    <string name="cafe_title">Cafe</string>
+    <string name="total_cafes_count">300 Places</string>
+    <string name="text_filter">Filter</string>
+    <string name="home">Home</string>
+    <string name="basket">Orders</string>
+    <string name="cart">Cart</string>
+    <string name="person">Profile</string>
 
 </resources>

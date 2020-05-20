@@ -30,6 +30,7 @@
                 android:drawableStart="@drawable/abc_vector_test"
                 android:fontFamily="@font/msb"
                 android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:paddingTop="20dp"
                 android:text="@string/back"
                 android:textColor="@color/colorPrimary"

@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, MainPageActivity.class));
+                startActivity(new Intent(LoginActivity.this, RestaurantsActivity.class));
             }
         });
 
@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLoginWithGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(LoginActivity.this, MainPageActivity.class));
             }
         });
 

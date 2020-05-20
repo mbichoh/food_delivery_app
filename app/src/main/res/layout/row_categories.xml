@@ -37,7 +37,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/mm"
-                        android:text="Cakes"
+                        android:text="@string/category_name"
                         android:textColor="@color/colorPrimary"
                         android:textSize="14sp"
                         />
@@ -47,7 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/mr"
-                        android:text="590 Places"
+                        android:text="@string/category_places_count"
                         android:textColor="@color/colorPrimary"
                         android:textSize="13sp"
                         />
