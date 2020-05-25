@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.nathanmbichoh.food_delivery_app.restaurantcafes.RestaurantCafeActivity;
 
 import java.util.Calendar;
 import java.util.TimeZone;
@@ -77,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLoginWithFb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(LoginActivity.this, RestaurantCafeActivity.class));
             }
         });
     }

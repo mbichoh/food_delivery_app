@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".restaurantcafes.RestaurantCafeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@mipmap/cafe"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBack"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:padding="10dp"
+                tools:ignore="PrivateResource" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/txtSearchRestaurant"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:background="@drawable/bg_white" />
+
+            <TextView
+                android:id="@+id/txtMenu"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_menu_white_24dp"
+                android:padding="10dp"
+                tools:ignore="PrivateResource" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutCafeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-70dp"
+            android:background="@drawable/bg_cafe"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/txtCafeTitleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Tav"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/msb"
+                android:textAlignment="center"
+                android:paddingTop="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRateStarsOver5AndNumberOfLikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="3dp"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/rateCafeStar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:layout_marginEnd="10dp"
+                    android:progressTint="@color/rating"
+                    android:progressBackgroundTint="@color/colorAccent"
+                    android:numStars="5"
+                    android:rating="4.0"
+                    android:stepSize="1.0"
+                    tools:ignore="TooDeepLayout" />
+
+                <TextView
+                    android:id="@+id/txtRateCafeIn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4,5"
+                    android:textColor="@color/colorDark"
+                    android:layout_marginEnd="3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/mm"
+                    />
+                <TextView
+                    android:id="@+id/txtTotalLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(4563)"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/mr"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutWorkingHoursAndOrderLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp"
+                >
+                <TextView
+                    android:id="@+id/txtWorkingHours"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" 8am - 3pm"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginEnd="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mm"
+                    />
+                <TextView
+                    android:id="@+id/txtOrderLimit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Minimal Order- Ksh 800"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginEnd="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mm"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                >
+                <TextView
+                    android:id="@+id/txtDeliveryTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" 30 min"
+                    android:drawableStart="@drawable/ic_motorbike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginEnd="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mm"
+                    />
+                <TextView
+                    android:id="@+id/txtDeliveryFee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Free Delivery"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_delivery_blue"
+                    android:layout_marginEnd="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mm"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/mm"
+                android:text="Menu"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtBtnFilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_chevrons_right_blue"
+                android:fontFamily="@font/mm"
+                android:padding="5dp"
+                android:text="View all"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabCafeCategories"
+                style="@style/Widget.MaterialComponents.TabLayout"
+                app:tabMode="scrollable"
+                android:background="@color/tabBg"
+                app:tabTextColor="@color/colorAccent"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabRippleColor="@color/colorAccent"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabIndicatorAnimationDuration="@android:integer/config_mediumAnimTime"
+                app:tabIndicatorHeight="3dp"
+                app:tabMaxWidth="110dp"
+                app:tabMinWidth="110dp"
+                app:tabGravity="center"
+                app:tabIndicatorGravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"/>
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch"/>
+
+            </com.google.android.material.tabs.TabLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerCafesCategories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

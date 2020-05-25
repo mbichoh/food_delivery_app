@@ -48,7 +48,7 @@
     <string name="cafe_rates">4,5</string>
     <string name="cafe_likes">(202)</string>
     <string name="cafe_delivery">Delivery Ksh200</string>
-    <string name="cafe_delivery_time">1.5h</string>
+    <string name="cafe_delivery_time"> 1.5h</string>
     <string name="category_name">Cakes</string>
     <string name="category_places_count">590 Places</string>
     <string name="cafe_title">Cafe</string>
