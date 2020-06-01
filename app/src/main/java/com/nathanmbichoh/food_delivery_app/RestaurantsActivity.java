@@ -32,7 +32,7 @@ public class RestaurantsActivity extends AppCompatActivity  implements BottomNav
     private int     imgCafes[] = {R.mipmap.tav, R.mipmap.blend, R.mipmap.gallitos, R.mipmap.chief, R.mipmap.pizza, R.mipmap.kfc, R.mipmap.sizzley};
     private String  txtCafeName[] = {"The Tav", "Blend", "Milan", "Chiefs Place", "Pizza Inn", "KFC", "Sizzly"};
     private String  txtCafeLocation[] ={"Mirage, Westlands", "Thika, Kiambu", "Tuskys Chania, Thika", "LC Waikiki, Parklands", "Moi Avenue, Str 14", "Off Chiromo, Kileleshwa", "Ruiru, Thika Road"};
-    private String  txtCafeDeliveryTime[] = {"1h", "2h", "2h", "1h", "1.5h", "1h", "1.5h"};
+    private String  txtCafeDeliveryTime[] = {" 1h", " 2h", " 2h", " 1h", " 1.5h", " 1h", " 1.5h"};
     private String  txtCafeDeliveryCharge[] = {"Delivery Ksh200", "Free Delivery", "Delivery Ksh320", "Delivery Ksh100", "Free Delivery", "Delivery Ksh200", "Free Delivery"};
     private String  txtCafeRating[] = {"4,5", "5,5", "4,5", "2,5", "1,5", "2,5", "3,5"};
     private String  txtCafeLikes[] = {"(200)", "(459)", "(15)", "(334)", "(98)", "(134)", "(201)"};
