@@ -109,28 +109,74 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <LinearLayout
+        android:id="@+id/countryCodeHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:baselineAligned="false">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:ccp_textSize="14sp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPhone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/phone"
+            android:textColorHint="@color/colorAccent"
+            app:boxBackgroundMode="filled"
+            app:boxStrokeColor="@color/colorAccent"
+            app:hintTextColor="?attr/colorAccent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mm"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="phone"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutPhone"
+        android:id="@+id/textInputLayoutAddress"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="5dp"
-        android:hint="@string/phone"
-        app:helperText="Int format: +254..."
+        android:hint="@string/address"
         android:textColorHint="@color/colorAccent"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="@color/colorAccent"
         app:hintTextColor="?attr/colorAccent"
-        app:startIconDrawable="@drawable/ic_phone_black_24dp">
+        app:startIconDrawable="@drawable/ic_baseline_my_location_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/phoneTxt"
+            android:id="@+id/addressTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mm"
-            android:inputType="phone"
+            android:inputType="textPostalAddress"
             android:textColor="@color/colorAccent"
             android:textSize="15sp" />
 
@@ -207,6 +253,14 @@
         android:text="@string/policy"
         android:textAlignment="center"
         android:textSize="14sp" />
+
+        <View
+            android:id="@+id/dividerPPLA"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="?android:attr/listDivider"/>
         </LinearLayout>
 
     </ScrollView>

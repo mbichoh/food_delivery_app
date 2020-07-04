@@ -279,8 +279,131 @@
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPagerCafesCategories"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardViewRestaurantCafes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeWidth="1dp"
+                    app:cardCornerRadius="5dp"
+                    app:strokeColor="@color/colorAccent"
+                    app:rippleColor="@color/colorAccent"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        >
+
+                        <!-- Media -->
+                        <ImageView
+                            android:id="@+id/imgResCafe"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="2"
+                            app:srcCompat="@mipmap/pizza"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/txtAgreement"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:paddingStart="1dp"
+                            android:paddingEnd="1dp"
+                            android:background="@color/colorPrimary">
+
+                            <TextView
+                                android:id="@+id/txtResCafeName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cafe_name"
+                                android:textColor="@color/colorDark"
+                                android:fontFamily="@font/mm"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:textSize="15sp"
+                                />
+                            <TextView
+                                android:id="@+id/txtResCafeLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cafe_location"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="@font/mr"
+                                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                                android:textSize="13sp"
+                                android:paddingStart="3dp"
+                                android:paddingEnd="3dp"
+                                android:paddingTop="5dp"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="5dp"
+                                android:paddingStart="3dp"
+                                android:paddingEnd="3dp"
+                                >
+                                <TextView
+                                    android:id="@+id/txtResCafeRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cafe_rates"
+                                    android:fontFamily="@font/mm"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorDark"
+                                    android:drawableStart="@drawable/ic_star_black_24dp"
+                                    />
+                                <TextView
+                                    android:id="@+id/txtResCafeLikes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cafe_likes"
+                                    android:fontFamily="@font/mr"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/colorAccent"
+                                    />
+                                <TextView
+                                    android:id="@+id/txtResCafeDeliveryFee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mm"
+                                    android:text="@string/cafe_delivery"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"
+                                    android:layout_marginStart="5dp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtResCafeDeliveryTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/cafe_delivery_time"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:drawableStart="@drawable/ic_delivery_truck"
+                            android:fontFamily="@font/mm"
+                            android:textSize="13sp"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
     </ScrollView>

@@ -23,7 +23,7 @@
     <string name="verif">We sent an SMS verification code to \n +254 797 378991.</string>
     <string name="email">Email</string>
     <string name="username">Name</string>
-    <string name="phone">Phone</string>
+    <string name="phone">Phone number</string>
     <string name="sign_up">Sign Up</string>
     <string name="send">Send</string>
     <string name="verificationBtn">Verify Account</string>
@@ -58,5 +58,6 @@
     <string name="basket">Orders</string>
     <string name="cart">Cart</string>
     <string name="person">Profile</string>
+    <string name="address">Address</string>
 
 </resources>
