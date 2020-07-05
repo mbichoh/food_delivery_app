@@ -29,22 +29,23 @@ public class MainPageActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
 
     //favourite restaurants
-    String mResNames[]  = {"The Tav, Westlands", "Blend, Thika", "Milan, Westlands", "Chiefs Place, Parklands", "Pizza Inn, Thika", "KFC, Two Rivers", "Sizzly, Mirage"};
-    String mFavPoints[] = {"256", "209", "199", "157", "135", "96", "82" };
-    Float mResRate[]    = {5f, 5f, 4.0f, 4.0f, 4.0f, 3.0f, 2.0f};
-    int imagesRes[]     = {R.mipmap.tav, R.mipmap.blend, R.mipmap.gallitos, R.mipmap.chief, R.mipmap.pizza, R.mipmap.kfc, R.mipmap.sizzley};
+    String mResNames[] = {"The Tav, Westlands", "Blend, Thika", "Milan, Westlands", "Chiefs Place, Parklands", "Pizza Inn, Thika", "KFC, Two Rivers", "Sizzly, Mirage"};
+    String mFavPoints[] = {"256", "209", "199", "157", "135", "96", "82"};
+    Float mResRate[] = {5f, 5f, 4.0f, 4.0f, 4.0f, 3.0f, 2.0f};
+    int imagesRes[] = {R.mipmap.tav, R.mipmap.blend, R.mipmap.gallitos, R.mipmap.chief, R.mipmap.pizza, R.mipmap.kfc, R.mipmap.sizzley};
 
     //food categories
-    String mCatNames[]  = {"Cafe", "Fast Foods", "Coffee", "Desserts", "Pizza Inn", "Cake", "Chicken Inn", "Drinks", "Chinese"};
-    String mCatCount[]  = {"510", "457", "300", "276", "244", "203", "167", "149", "123"};
-    int mCatIcon[]      = {R.drawable.ic_cafe, R.drawable.ic_french_fries, R.drawable.ic_coffee, R.drawable.ic_desserts, R.drawable.ic_pizza_slice, R.drawable.ic_027_cupcake, R.drawable.ic_chicken, R.drawable.ic_drink, R.drawable.ic_noodles};
+    String mCatNames[] = {"Cafe", "Fast Foods", "Coffee", "Desserts", "Pizza Inn", "Cake", "Chicken Inn", "Drinks", "Chinese"};
+    String mCatCount[] = {"510", "457", "300", "276", "244", "203", "167", "149", "123"};
+    int mCatIcon[] = {R.drawable.ic_cafe, R.drawable.ic_french_fries, R.drawable.ic_coffee, R.drawable.ic_desserts, R.drawable.ic_pizza_slice, R.drawable.ic_027_cupcake, R.drawable.ic_chicken, R.drawable.ic_drink, R.drawable.ic_noodles};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
 
         txtTotalRestaurants = (TextView) findViewById(R.id.txtTotalNumRestaurant);
-        txtTotalCats        = (TextView) findViewById(R.id.txtTotalCategories);
+        txtTotalCats = (TextView) findViewById(R.id.txtTotalCategories);
 
         txtSearchRestaurant = (SearchView) findViewById(R.id.txtSearchRestaurant);
 
@@ -62,7 +63,7 @@ public class MainPageActivity extends AppCompatActivity {
 
         //total favourite restaurant count
         String favRestaurantsCount = String.valueOf(mAdapter.getItemCount());
-        txtTotalRestaurants.setText(". "+favRestaurantsCount+" Restaurants");
+        txtTotalRestaurants.setText(". " + favRestaurantsCount + " Restaurants");
 
         //restaurant categories adapter calling class
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -72,21 +73,23 @@ public class MainPageActivity extends AppCompatActivity {
 
         //total food categories count
         String foodCategoryCount = String.valueOf(mAdapter.getItemCount());
-        txtTotalCats.setText(". "+foodCategoryCount+" Categories");
+        txtTotalCats.setText(". " + foodCategoryCount + " Categories");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.main_page, menu);
-        return  true;
+        return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_profile:
                 startActivity(new Intent(this, ProfileActivity.class));
+            case R.id.action_help:
+                startActivity(new Intent(this, VerificationActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }

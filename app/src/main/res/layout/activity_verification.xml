@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="@color/colorPrimary"
-    tools:context=".ForgotPasswordActivity">
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/colorPrimary"
+        tools:context=".ForgotPasswordActivity">
 
-
-    <TextView
-        android:id="@+id/txtBack"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
-        android:fontFamily="@font/msb"
-        android:text="@string/back"
-        android:textColor="@color/colorDark"
-        android:textSize="17sp" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        >
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="150dp"-->
-<!--        android:layout_marginTop="36dp"-->
-<!--        android:src="@drawable/ic_undraw_security_o890"-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_undraw_security_o890"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/verify"
-        android:layout_marginTop="36dp"
         android:textAlignment="center"
         android:textColor="@color/colorDark"
         android:fontFamily="@font/msb"
         android:textSize="21sp"
         />
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/verif"
+        android:text="@string/we_sent_an_sms"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/mm"
         android:textSize="15sp"
         />
+
+        <TextView
+            android:id="@+id/phoneToVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verification_phone"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/mm"
+            android:textSize="15sp"
+            />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/code_expires_in"
+        android:layout_marginEnd="5dp"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:fontFamily="@font/mm"
@@ -70,8 +75,10 @@
             android:layout_height="wrap_content"
             android:text="@string/time_to_exp"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="@font/msb"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/bg_time"
+            android:paddingHorizontal="5dp"
+            android:fontFamily="@font/mb"
             android:textSize="16sp"
             />
     </LinearLayout>
@@ -89,7 +96,9 @@
             android:inputType="numberSigned|number"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
         <EditText
             android:maxLength="1"
             android:layout_width="50dp"
@@ -149,8 +158,6 @@
         android:textSize="15sp"
         />
 
-
-
     <Button
         android:id="@+id/btnSend"
         android:layout_width="match_parent"
@@ -163,5 +170,6 @@
         android:text="@string/verificationBtn"
         android:textColor="@color/colorPrimary"
         android:textSize="13sp" />
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

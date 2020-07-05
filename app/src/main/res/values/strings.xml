@@ -20,7 +20,7 @@
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="verify">Enter Verification Code</string>
-    <string name="verif">We sent an SMS verification code to \n +254 797 378991.</string>
+    <string name="we_sent_an_sms">We sent an SMS verification code to</string>
     <string name="email">Email</string>
     <string name="username">Name</string>
     <string name="phone">Phone number</string>
@@ -34,8 +34,8 @@
     <string name="user_profile_photo">User profile photo</string>
     <string name="resend_a_new_code">Resend a new code</string>
     <string name="din_t_receive_any_sms_verification_code">Didn\'t receive any SMS Verification code?</string>
-    <string name="time_to_exp"> 1:59 Sec</string>
-    <string name="code_expires_in">Code expires in  </string>
+    <string name="time_to_exp">2:59 sec</string>
+    <string name="code_expires_in">Code expires in</string>
     <string name="hello_">Hello, Nathan.</string>
     <string name="what_would_you_like_n_to_eat_today">What would you like \nto eat today?</string>
     <string name="favourite">Favourite</string>
@@ -59,5 +59,16 @@
     <string name="cart">Cart</string>
     <string name="person">Profile</string>
     <string name="address">Address</string>
+    <string name="get_started">Get Started</string>
+    <string name="end">~End~</string>
+    <string name="help">Help</string>
+    <string name="my_profile">My Profile</string>
+    <string name="verification_phone">+254 797 378891</string>
+    <string name="categories">Categories</string>
+    <string name="_10_categories">. 10 Categories</string>
+    <string name="working_hrs">8am - 3pm</string>
+    <string name="minimal_order">Minimal Order- Ksh 800</string>
+    <string name="menu">Menu</string>
+    <string name="view_all">View all</string>
 
 </resources>

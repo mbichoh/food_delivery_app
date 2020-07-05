@@ -22,7 +22,7 @@
   <path
       android:pathData="M128.63,107.75L1053.98,107.75A12.49,12.49 0,0 1,1066.47 120.24L1066.47,633.59A12.49,12.49 0,0 1,1053.98 646.08L128.63,646.08A12.49,12.49 0,0 1,116.14 633.59L116.14,120.24A12.49,12.49 0,0 1,128.63 107.75z">
     <aapt:attr name="android:fillColor">
-      <gradient
+      <gradient 
           android:startY="646.08"
           android:startX="591.3"
           android:endY="107.75"
@@ -224,7 +224,7 @@
       android:strokeWidth="1"
       android:pathData="M858.13,767.52s7.3,-4.8 10.22,-1.61S858.13,767.52 858.13,767.52Z"
       android:strokeAlpha="0.1"
-      android:strokeColor="#667eea"
+      android:strokeColor="#6c63ff"
       android:fillAlpha="0.1"/>
   <path
       android:fillColor="#FF000000"
@@ -321,7 +321,7 @@
       android:strokeColor="#535461"/>
   <path
       android:pathData="M94.79,456.96c18,13 25.51,33.4 25.51,33.4s-21.7,-0.74 -39.71,-13.77 -25.5,-33.4 -25.5,-33.4S76.79,443.88 94.79,456.96Z"
-      android:fillColor="#667eea"/>
+      android:fillColor="#6c63ff"/>
   <path
       android:pathData="M55.09,443.14s22.52,12.5 29.74,22.85 35.47,24.32 35.47,24.32"
       android:strokeWidth="2"
