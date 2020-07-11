@@ -14,28 +14,52 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.nathanmbichoh.food_delivery_app.ProfileActivity;
 import com.nathanmbichoh.food_delivery_app.R;
-import com.nathanmbichoh.food_delivery_app.RestaurantsActivity;
+import com.nathanmbichoh.food_delivery_app.adapters.ViewPagerAdapter;
+import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.BreakfastFragment;
+import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.DinnerFragment;
+import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.LunchFragment;
+import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.PopularFragment;
+import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.TodaySalesFragment;
+import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.VegetarianFragment;
 
 public class RestaurantCafeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
-
-    private ViewPager viewPagerCats;
-    private TabLayout tabLayoutCats;
-
-    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_cafe);
 
-        viewPagerCats = (ViewPager) findViewById(R.id.viewPagerCafesCategories);
-        tabLayoutCats = (TabLayout) findViewById(R.id.tabCafeCategories);
+        ViewPager viewPagerCats = (ViewPager) findViewById(R.id.viewPagerCafesCategories);
+        TabLayout tabLayoutCats = (TabLayout) findViewById(R.id.tabCafeCategories);
+
+        //fragments
+        TodaySalesFragment todaySalesFragment = new TodaySalesFragment();
+        PopularFragment popularFragment = new PopularFragment();
+        BreakfastFragment breakfastFragment = new BreakfastFragment();
+        LunchFragment lunchFragment = new LunchFragment();
+        DinnerFragment dinnerFragment = new DinnerFragment();
+        VegetarianFragment vegetarianFragment = new VegetarianFragment();
+
+        //add tabs to viewpager
+        tabLayoutCats.setupWithViewPager(viewPagerCats);
+
+        //register fragments to viewpagerAdapter
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
+        viewPagerAdapter.addFragment(todaySalesFragment, "Today Sales");
+        viewPagerAdapter.addFragment(popularFragment, "Popular");
+        viewPagerAdapter.addFragment(breakfastFragment, "Breakfast");
+        viewPagerAdapter.addFragment(lunchFragment, "Lunch");
+        viewPagerAdapter.addFragment(dinnerFragment, "Dinner");
+        viewPagerAdapter.addFragment(vegetarianFragment, "Vegetarian");
+        //add viewPageAdapter to viewPage
+        viewPagerCats.setAdapter(viewPagerAdapter);
 
         //bottom navigation view
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         //bottomNavigationView.setSelectedItemId(R.id.homeMenuBottomNav);
 
+        //badge icon
         BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.cartMenuBottomNav);
         badgeDrawable.setVisible(true);
         badgeDrawable.setNumber(5);

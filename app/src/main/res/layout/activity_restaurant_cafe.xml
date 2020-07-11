@@ -136,17 +136,29 @@
                     android:orientation="horizontal"
                     android:paddingVertical="4dp"
                     >
-                    <TextView
-                        android:id="@+id/txtWorkingHours"
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/working_hrs"
-                        android:drawableStart="@drawable/ic_access_time_black_24dp"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="13sp"
-                        android:fontFamily="@font/mm"
-                        />
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_access_time_black_24dp"
+                            tools:ignore="NestedWeights" />
+                        <TextView
+                            android:id="@+id/txtWorkingHours"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/working_hrs"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/mm"
+                            />
+                    </LinearLayout>
+
                     <TextView
                         android:id="@+id/txtOrderLimit"
                         android:layout_width="0dp"
@@ -165,17 +177,28 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     >
-                    <TextView
-                        android:id="@+id/txtDeliveryTime"
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cafe_delivery_time"
-                        android:drawableStart="@drawable/ic_motorbike"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="13sp"
-                        android:fontFamily="@font/mm"
-                        />
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_motorbike"
+                            tools:ignore="NestedWeights" />
+                        <TextView
+                            android:id="@+id/txtDeliveryTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/cafe_delivery_time"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/mm"
+                            />
+                    </LinearLayout>
                     <TextView
                         android:id="@+id/txtDeliveryFee"
                         android:layout_width="0dp"
@@ -242,34 +265,7 @@
                     app:tabGravity="center"
                     app:tabIndicatorGravity="bottom"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Popular"/>
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Breakfast"/>
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Lunch"/>
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Popular"/>
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Breakfast"/>
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Lunch"/>
-
-                </com.google.android.material.tabs.TabLayout>
+                    android:layout_height="wrap_content"/>
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPagerCafesCategories"
                     android:layout_width="match_parent"
@@ -294,7 +290,6 @@
             android:background="@color/colorPrimaryDark"
             app:menu="@menu/bottom_restaurant_navigation_menu"
             app:labelVisibilityMode="labeled"/>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
