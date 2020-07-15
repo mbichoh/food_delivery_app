@@ -16,9 +16,9 @@
         android:icon="@drawable/ic_shopping_basket_black_24dp"
         android:title="@string/cart"/>
     <item
-        android:id="@+id/profileMenuBottomNav"
+        android:id="@+id/notificationMenuBottomNav"
         android:enabled="true"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:title="@string/person" />
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/notifications"/>
 
 </menu>

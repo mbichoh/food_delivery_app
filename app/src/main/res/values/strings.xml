@@ -47,8 +47,8 @@
     <string name="cafe_location">Thika, Kiambu</string>
     <string name="cafe_rates">4,5</string>
     <string name="cafe_likes">(202)</string>
-    <string name="cafe_delivery">Delivery Ksh200</string>
-    <string name="cafe_delivery_time"> 1hr 30min</string>
+    <string name="cafe_delivery">Delivery Kes 200</string>
+    <string name="cafe_delivery_time">30 min</string>
     <string name="category_name">Cakes</string>
     <string name="category_places_count">590 Places</string>
     <string name="cafe_title">Cafe</string>
@@ -67,7 +67,7 @@
     <string name="categories">Categories</string>
     <string name="_10_categories">. 10 Categories</string>
     <string name="working_hrs">8am - 3pm</string>
-    <string name="minimal_order">Minimal Order- Ksh 200</string>
+    <string name="minimal_order">Minimal Order:- Kes 200</string>
     <string name="menu">Menu</string>
     <string name="view_all">View all</string>
     <string name="food_name">Rice Chicken</string>
@@ -75,5 +75,7 @@
     <string name="food_pricing">Ksh 350.00</string>
     <string name="btnBuy">Buy</string>
     <string name="image_of_food">image of food</string>
+    <string name="notifications">Notifications</string>
+    <string name="delivery_distance">2.3km</string>
 
 </resources>

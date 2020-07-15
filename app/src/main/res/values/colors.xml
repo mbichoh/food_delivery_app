@@ -6,4 +6,6 @@
     <color name="colorDark">#4a5568</color>
     <color name="tabBg">#1A718096</color>
     <color name="rating">#FF9529</color>
+    <color name="color_accent">#000000</color>
+    <color name="background">#EFEEEE</color>
 </resources>

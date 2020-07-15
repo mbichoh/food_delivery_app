@@ -62,9 +62,14 @@ public class RestaurantsActivity extends AppCompatActivity  implements BottomNav
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         //bottomNavigationView.setSelectedItemId(R.id.homeMenuBottomNav);
 
-        BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.cartMenuBottomNav);
-        badgeDrawable.setVisible(true);
-        badgeDrawable.setNumber(5);
+        //badge icon cart
+        BadgeDrawable badgeDrawableCart = bottomNavigationView.getOrCreateBadge(R.id.cartMenuBottomNav);
+        badgeDrawableCart.setVisible(true);
+        badgeDrawableCart.setNumber(5);
+        //badge icon notifications
+        BadgeDrawable badgeDrawableNotifications = bottomNavigationView.getOrCreateBadge(R.id.notificationMenuBottomNav);
+        badgeDrawableNotifications.setVisible(true);
+        badgeDrawableNotifications.setNumber(3);
 
     }
 
@@ -80,8 +85,8 @@ public class RestaurantsActivity extends AppCompatActivity  implements BottomNav
             case R.id.cartMenuBottomNav:
                 Toast.makeText(getApplicationContext(), "TO CART", Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.profileMenuBottomNav:
-                startActivity(new Intent(RestaurantsActivity.this, ProfileActivity.class));
+            case R.id.notificationMenuBottomNav:
+                Toast.makeText(getApplicationContext(), "TO NOTIFICATIONS", Toast.LENGTH_LONG).show();
                 return true;
         }
         return false;

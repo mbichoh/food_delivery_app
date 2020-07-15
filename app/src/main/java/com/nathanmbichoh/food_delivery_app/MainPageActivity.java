@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,6 +40,7 @@ public class MainPageActivity extends AppCompatActivity {
     String mCatCount[] = {"510", "457", "300", "276", "244", "203", "167", "149", "123"};
     int mCatIcon[] = {R.drawable.ic_cafe, R.drawable.ic_french_fries, R.drawable.ic_coffee, R.drawable.ic_desserts, R.drawable.ic_pizza_slice, R.drawable.ic_027_cupcake, R.drawable.ic_chicken, R.drawable.ic_drink, R.drawable.ic_noodles};
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
