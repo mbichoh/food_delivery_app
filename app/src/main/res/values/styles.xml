@@ -13,4 +13,9 @@
         <item name="neumorph_cornerSize">25dp</item>
     </style>
 
+    <style name="ButtonShapeAppearance">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">32dp</item>
+    </style>
+
 </resources>

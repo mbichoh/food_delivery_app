@@ -16,6 +16,16 @@
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary">
 
+    <Button
+        android:id="@+id/btnBuyFood123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/btnBuy"
+        android:fontFamily="@font/msb"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"/>
+
     <!--//list foods offered in the restaurant cafes-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewListResCafeFoods"

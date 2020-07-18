@@ -77,5 +77,10 @@
     <string name="image_of_food">image of food</string>
     <string name="notifications">Notifications</string>
     <string name="delivery_distance">2.3km</string>
+    <string name="foodTitle">Classic Cheese Burger Fries</string>
+    <string name="food_small_desc">100g/piece</string>
+    <string name="addToOrdersCart">Add</string>
+    <string name="foodLargeDesc">Cheddar cheese, lettuce, tomato, sweet red onions and pickles on a 100% Angus beef burger, prepared medium well and served on a brioche bun.</string>
+    <string name="orderFoodIngredients">Ingredients:</string>
 
 </resources>

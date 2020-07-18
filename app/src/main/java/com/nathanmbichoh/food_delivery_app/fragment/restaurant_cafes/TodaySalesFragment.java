@@ -1,18 +1,29 @@
 package com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.snackbar.Snackbar;
 import com.nathanmbichoh.food_delivery_app.R;
 import com.nathanmbichoh.food_delivery_app.adapters.RestaurantCafesFoodAdapter;
+import com.nathanmbichoh.food_delivery_app.fragment.CustomDialogFragment;
+import com.nathanmbichoh.food_delivery_app.fragment.RestaurantCafeFoodDescriptionDialog;
+
+import java.util.Objects;
 
 public class TodaySalesFragment extends Fragment {
 
@@ -33,7 +44,17 @@ public class TodaySalesFragment extends Fragment {
         RecyclerView.Adapter adapter = new RestaurantCafesFoodAdapter(foodImage, foodName, foodDescription, foodAmount);
         recyclerViewListCafeFoods.setAdapter(adapter);
 
-        return  view;
+        //btn food ID
+        Button btnFoodDesc = view.findViewById(R.id.btnBuyFood123);
+        //show food dialog
+        btnFoodDesc.setOnClickListener(v -> foodOrderDescDialog());
 
+        return  view;
+    }
+
+    public void foodOrderDescDialog(){
+        DialogFragment restaurantCafeFoodDescriptionDialog = new RestaurantCafeFoodDescriptionDialog();
+        assert getFragmentManager() != null;
+        restaurantCafeFoodDescriptionDialog.show(getFragmentManager(), "foodDescriptionOrderingDialog");
     }
 }

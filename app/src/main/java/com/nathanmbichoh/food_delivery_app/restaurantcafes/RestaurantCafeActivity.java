@@ -1,19 +1,16 @@
 package com.nathanmbichoh.food_delivery_app.restaurantcafes;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.nathanmbichoh.food_delivery_app.ProfileActivity;
 import com.nathanmbichoh.food_delivery_app.R;
 import com.nathanmbichoh.food_delivery_app.adapters.ViewPagerAdapter;
 import com.nathanmbichoh.food_delivery_app.fragment.restaurant_cafes.BreakfastFragment;
